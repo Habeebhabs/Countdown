@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+.wrapper{
+    padding: 0.6rem;
+    font-family: inter,'sans serif';
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+.navbar > .fas{
+    font-size: 1.1rem;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    animation: slide 0.4s ease-in-out forwards;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.input-container{
+    background-color: #fff;
+    height: 40px;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+}
+.input-container > input{
+    width: inherit;
+    height: 100%;
+    float: right;
+    background: none;
+    border: none;
+    padding-left: 2rem;
+}
+.input-container > .fas{
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.5rem;
+}
+.filter{
+    padding: 0 0.8rem;
+    height: 40px;
+    background-color: #FAA11B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.filter > .fas{
+    background: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.search-result{
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 2.7rem;
+    right: 3.15rem;
+    left: 0;
+    padding: 6px 8px;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: none;
+    margin-bottom: 5px;
+}
+.result > img{
+    width: 40px;
+    height: 25px;
+    border-radius: 2px;
+    object-fit: fill;
+}
+.result > span{
+    background: none;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+.search-btn{
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    background-color: blue;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+.search-btn > .fas,.search-btn > span{
+    background: none;
+    color: #fff;
+}
