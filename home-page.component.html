@@ -1,0 +1,45 @@
+<div class="wrapper">
+    <nav class="navbar">
+        <i class="fas fa-bars"></i>
+        <h5 class="nav-head">HOME</h5>
+        <i class="fas fa-external-link-alt" ></i>
+    </nav>
+    <main class="container">
+        <section *ngIf="status" class="search-bar">
+            <div class="input-container">
+                <i class="fas fa-search"></i>
+                <input type="text" class="input" placeholder="Search..">
+            </div>
+            <div class="filter">
+                <i class="fas fa-sliders-h"></i>
+            </div>
+            <div class="search-result">
+                <div class="result">
+                    <img src="assets\1.jpg" alt="">
+                    <span class="suggestion">Indian</span>
+                </div>
+                <div class="result">
+                    <img src="assets\5.jpg" alt="">
+                    <span class="suggestion">Indian</span>
+                </div>
+                <div class="result">
+                    <img src="assets\10.jpg" alt="">
+                    <span class="suggestion">Indian</span>
+                </div>
+            </div>
+        </section>
+        <section class="offer">
+
+        </section>
+        <section class="best-seller">
+
+        </section>
+        <section class="categories">
+
+        </section>
+        <section class="search-btn" (click)="changeStatus()">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+        </section>
+    </main>
+</div>
